@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon1.png">
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+    <div class="title"><h1>Etch-a-Sketch</h1></div>
+    <div class="mode">Mode: Coloring</div>
+
+    <div class="flex-container">
+
+        <div class="board"></div>
+
+        <div class="content">
+
+            <div class="channels">
+            <h3>Channels</h3><br>
+            <p>Channel 1 - Default Color <br><br>
+                Channel 2 - Black Color <br><br>
+                Channel 3 - White Color <br><br>
+                Channel 4 - Eraser <br><br>
+                Channel 5 - Random Colors <br><br>
+                R Button - Reset Button <br></p>
+            </div>
+       
+
+        <div class="buttons">
+                <button class="defaultButton" onclick="changeColor('#20C20E')">1</button>
+                <button class="blackButton" onclick="changeColor('black')">2</button>
+                <button class="whiteButton" onclick="changeColor('white')">3</button>
+                <button class="eraserButton" onclick="changeColor('#191c22')">4</button>
+                <button class="randomButton" onclick="changeColor('random')">5</button>  
+            </div>
+            
+            
+    </div><div class="rightPanel">
+            <button class="resetButton" onclick="resetBoard()">R</button>
+            <div class="sizeBox">
+            <input type="text" placeholder="Size" value="16" onchange="changeSize(this.value)"/>
+            </div>
+            <button class="size">Set Size</button>
+             
+        </div>
+        <div class="error">Input (2 - 200)</div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

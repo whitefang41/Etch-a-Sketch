@@ -1,0 +1,126 @@
+@font-face {
+    font-family: DKnR;
+    src: url('8801-DKnR.ttf');
+  }
+
+html{
+    background: url(img/bg1.png);
+    background-color: #191c22;
+    background-size: 100%;
+    font-family: DKnR;
+    color: white; 
+    box-sizing: border-box;
+    
+}
+
+.flex-container{
+    height: 100%;
+    width: 100%;
+    max-width: 1290px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 235px;
+    column-count: 2;
+    column-gap: 130px;    
+}
+
+.board{
+    width: 800px;
+    height: 579px;
+    display: grid;
+}
+
+.board:hover {
+    cursor: crosshair;
+}
+
+.content {
+    width:25%;
+    right:0;
+}
+
+.buttons{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    padding: 53px 0px 0px 6px;
+}
+
+.defaultButton{
+    margin: 18px;
+}
+
+.blackButton{
+    margin: 18px;
+}
+
+.whiteButton{
+    margin: 18px;
+}
+
+.eraserButton{
+    margin: 18px;
+}
+
+.randomButton{
+    margin: 17px;
+}
+
+.resetButton{
+    background-color: red;
+}
+
+button {
+    border-radius: 100px;   
+    font-family: DKnR; 
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.rightPanel{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: stretch;
+    padding: 27px 0px 0px 960px;
+}
+
+input, textarea {
+    width: 50%;
+  }
+  
+.sizeBox{
+    width: 54px;
+    height: 18px;
+    display: flex;
+}
+
+.size{
+    display: flex;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.mode {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.error {
+    display: none;
+    color: red;
+    padding-left: 350px;
+}
+
